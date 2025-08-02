@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Simple Calender</title>
+  </head>
+  <body class="flex bg-[#edecec] h-screen items-center justify-center">
+    <main class="bg-[#484747] w-[320px] rounded-xl shadow-md shadow-gray-900">
+      <header
+        class="flex items-center pt-[15px] px-[20px] pl-[8px] justify-between"
+      >
+        <p id="currentDate" class="font-medium text-xl"></p>
+        <div class="flex">
+          <span
+            class="flex w-[30px] h-[30px] mx-[2px] cursor-pointer text-center leading-8 rounded-[50%] select-none text-[#aeababa] text-2xl hover:bg-[#f2f2f2]"
+          ></span>
+          <span class="mr-[-8px]"></span>
+        </div>
+      </header>
+
+      <div class="p-2.5 mb-2.5 w-full">
+        <ul class="list-none flex-wrap flex text-center">
+          <li class="w-[100%/7] h-[30px] text-sm text-[#414141] mt-5 relative z-10 cursor-pointer text-center box-border">Sun</li>
+          <li class="w-[100%/7] h-[30px] text-sm text-[#414141] mt-5 relative z-10 cursor-pointer text-center box-border">Mon</li>
+          <li class="w-[100%/7] h-[30px] text-sm text-[#414141] mt-5 relative z-10 cursor-pointer text-center box-border">Tue</li>
+          <li class="w-[100%/7] h-[30px] text-sm text-[#414141] mt-5 relative z-10 cursor-pointer text-center box-border">Wed</li>
+          <li class="w-[100%/7] h-[30px] text-sm text-[#414141] mt-5 relative z-10 cursor-pointer text-center box-border">Thu</li>
+          <li class="w-[100%/7] h-[30px] text-sm text-[#414141] mt-5 relative z-10 cursor-pointer text-center box-border">Fri</li>
+          <li class="w-[100%/7] h-[30px] text-sm text-[#414141] mt-5 relative z-10 cursor-pointer text-center box-border">Sat</li>
+        </ul>
+        <ul id="calenderDates" class="mb-2.5 w-full"></ul>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

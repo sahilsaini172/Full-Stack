@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <title>Budget Management Tool</title>
+  </head>
+  <body class="w-screen h-screen flex justify-center items-center bg-gray-100">
+    <main
+      class="max-w-1/4 min-w-1/2 bg-indigo-50 p-5 rounded-md shadow-md border border-indigo-100"
+    >
+      <h1 class="text-xl font-medium mb-4">Budget Management Tool</h1>
+      <form id="budgetForm">
+        <label for="income" class="text-sm text-indigo-900">Income:</label>
+        <input
+          id="income"
+          type="number"
+          class="mb-2 w-full p-2 border rounded-sm border-indigo-500 bg-white placeholder:text-indigo-300 text-indigo-950"
+          placeholder="Enter your income"
+        />
+        <label for="expenseAmount" class="text-sm text-indigo-900"
+          >Expense Amount:</label
+        >
+        <input
+          id="expenseAmount"
+          type="number"
+          class="mb-2 w-full p-2 border rounded-sm border-indigo-500 bg-white placeholder:text-indigo-300 text-indigo-950"
+          placeholder="Enter your expense amount"
+        />
+        <label for="expenseCategory" class="text-sm text-indigo-900"
+          >Expense Category:</label
+        >
+        <select
+          id="expenseCategory"
+          class="mb-2 w-full p-2 border rounded-sm border-indigo-500 bg-white placeholder:text-indigo-300 text-indigo-950"
+          placeholder="Select category"
+        >
+          <option value="Groceries">Groceries</option>
+          <option value="Utility">Utility</option>
+          <option value="Transport">Transport</option>
+          <option value="Entertainment">Entertainment</option>
+        </select>
+        <button
+          type="button"
+          id="addExpense"
+          class="text-center p-3 w-full rounded-md mt-2 bg-indigo-500 text-white"
+        >
+          Add Expense
+        </button>
+        <p class="my-2 text-indigo-950"></p>
+        <div
+          id="expenseList"
+          class="flex justify-between items-center mt-4 mb-1"
+        >
+          <h2 class="text-indigo-950">Total Expenses:</h2>
+          <h2 id="totalExpenses" class="text-indigo-500 font-bold"></h2>
+        </div>
+        <button
+          type="submit"
+          class="text-center p-3 w-full rounded-md mt-2 bg-teal-500 text-white"
+        >
+          Calculate
+        </button>
+        <p id="savings" class="my-2 text-indigo-950"></p>
+      </form>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
