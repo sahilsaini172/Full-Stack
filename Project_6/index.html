@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <title>Bookmark Landing Page</title>
+  </head>
+  <body class="bg-gray-100">
+    <header class="w-full bg-[#333333] text-center p-2.5 text-white">
+      <h1>My Bookmarks</h1>
+    </header>
+    <main class="max-w-[600px] my-0 mx-auto p-5">
+      <section class="flex mb-2.5">
+        <input
+          class="flex-[1] p-2.5"
+          type="url"
+          name="url"
+          id="urlInput"
+          placeholder="Enter URL"
+          pattern="https://.*"
+          size="50"
+          required
+        />
+        <button
+          id="addBookmark"
+          class="bg-[#007bff] text-white py-2.5 px-5 cursor-pointer font-medium ml-1.5 hover:bg-[#160af3]"
+        >
+          Add Bookmark
+        </button>
+        <button id="deleteAll" class="bg-[#ff6347] text-white py-2.5 px-5 cursor-pointer font-medium ml-2.5 hover:bg-[#f80404]">Delete All Bookmarks</button>
+      </section>
+      <section>
+        <ul id="bookmarkList"></ul>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
