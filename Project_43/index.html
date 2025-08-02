@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body
+    class="h-screen bg-gray-100 flex flex-col justify-items-center items-center dark:bg-gray-900"
+  >
+    <header class="flex flex-col p-5">
+      <h1
+        class="text-4xl font-semibold text-center text-indigo-500 dark:text-indigo-400"
+      >
+        Multiplication Quiz App
+      </h1>
+    </header>
+    <main
+      id="main"
+      class="p-10 w-fit h-fit bg-white rounded-2xl shadow-md shadow-indigo-200 border border-indigo-200 dark:bg-gray-800 dark:shadow-gray-900 dark:border-gray-700"
+    >
+      <p id="score" class="text-right font-bold dark:text-white">
+        Score: 1
+      <h2 id="question" class="text-3xl mt-3 dark:text-white">
+        What is X Multiply by X?
+      </h2>
+      <input
+        id="input"
+        type="number"
+        placeholder="Enter your answer"
+        class="w-full text-center bg-indigo-50 rounded-sm px-2 py-2 placeholder:text-indigo-500 mt-4 text-indigo-600 border"
+      />
+      <button
+        id="btn"
+        type="submit"
+        class="w-full mt-2 p-4 bg-indigo-500 text-white rounded-xl"
+      >
+        Submit
+      </button>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
